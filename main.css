@@ -12,10 +12,10 @@ h1.placeholder {
 
 @keyframes animatedBackground {
     from {
-        background-position: 0 0;
+        transform: rotate(15deg) translateY(0);
     }
     to {
-        background-position: 0 14em;
+        transform: rotate(15deg) translateY(14em);
     }
 }
 
