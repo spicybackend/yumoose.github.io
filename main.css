@@ -3,11 +3,14 @@ body {
     background-color: #222;
 }
 
-
 h1.placeholder {
-    padding: 4em;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
     color: white;
     text-align: center;
+    text-shadow: 0 0.1em 0.25em rgba(0, 0, 0, 0.5);
 }
 
 @keyframes animatedBackground {
