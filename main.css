@@ -15,7 +15,7 @@ h1.placeholder {
         transform: rotate(15deg) translateY(0);
     }
     to {
-        transform: rotate(15deg) translateY(14em);
+        transform: rotate(15deg) translateY(21em);
     }
 }
 
@@ -23,17 +23,17 @@ h1.placeholder {
     margin: 0;
     padding: 0;
     position: fixed;
-    top: -50%;
+    top: -100%;
     left: -50%;
     width: 200%;
-    height: 200%;
+    height: 250%;
     overflow: hidden;
     z-index: -100;
 
     opacity: 0.5;
 
     background-image: url('assets/pineapple.svg ');
-    background-size: 17.64em 14em;
+    background-size: 26.46em 21em;
 
     transform: rotate(15deg);
     animation: animatedBackground 2.5s linear infinite;
