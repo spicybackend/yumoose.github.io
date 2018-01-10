@@ -3,11 +3,14 @@ body {
     background-color: #222;
 }
 
-h1.placeholder {
-    top: 40%;
+.maintenance-placeholder {
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
+}
+
+.maintenance-placeholder h1, .maintenance-placeholder p {
     color: white;
     text-align: center;
     text-shadow: 0 0.1em 0.25em rgba(0, 0, 0, 0.5);
@@ -20,6 +23,12 @@ h1.placeholder {
     to {
         transform: rotate(15deg) translateY(21em);
     }
+}
+
+@keyframes rollingSquare {
+    0% { transform: translate(-2em, 0) rotate(0deg); }
+    50% { transform: translate(2em, 0) rotate(360deg); }
+    100% { transform: translate(-2em, 0) rotate(0deg); }
 }
 
 #tiled-pineapples {
@@ -40,4 +49,20 @@ h1.placeholder {
 
     transform: rotate(15deg);
     animation: animatedBackground 2.5s linear infinite;
+}
+
+.loading-square-container {
+    display: flex;
+    justify-content: center;
+}
+
+.loading-square {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    background-color: #f92672;
+}
+
+.loading-square-container .loading-square {
+    animation: rollingSquare 1.5s cubic-bezier(.17, .37, .43, .67) infinite;
 }
