@@ -16,12 +16,12 @@ body {
     text-shadow: 0 0.1em 0.25em rgba(0, 0, 0, 0.5);
 }
 
-@keyframes animatedBackground {
+@keyframes backgroundFade {
     from {
-        transform: rotate(15deg) translateY(0);
+        opacity: 0.25
     }
     to {
-        transform: rotate(15deg) translateY(21em);
+        opacity: 0.05
     }
 }
 
@@ -35,20 +35,20 @@ body {
     margin: 0;
     padding: 0;
     position: fixed;
-    top: -100%;
-    left: -50%;
-    width: 200%;
-    height: 250%;
+    top: -20%;
+    left: 0%;
+    width: 150%;
+    height: 150%;
     overflow: hidden;
     z-index: -100;
 
-    opacity: 0.5;
+    opacity: 0.25;
 
     background-image: url('assets/pineapple.svg ');
-    background-size: 26.46em 21em;
+    background-size: 13.23em 11.5em;
 
     transform: rotate(15deg);
-    animation: animatedBackground 2.5s linear infinite;
+    animation: backgroundFade 5s alternate infinite;
 }
 
 .loading-square-container {
